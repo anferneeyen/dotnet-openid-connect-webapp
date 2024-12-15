@@ -52,7 +52,7 @@ namespace OidcClientDemoApplication
             .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options => {
                 
                 // Use the strongest setting in production, which also enables HTTP on developer workstations
-                options.Cookie.SameSite = SameSiteMode.Strict;
+                //options.Cookie.SameSite = SameSiteMode.Strict;
             })
             .AddOpenIdConnect(options => {
 
